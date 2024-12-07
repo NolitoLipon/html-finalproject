@@ -1,0 +1,471 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Global Link Styling */
+a {
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid #444;
+}
+
+/* Header h1 */
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+/* Paragraph Styling */
+header p {
+    font-size: 1.2rem;
+    color: #bbb;
+    margin-top: 10px;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #222;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #444;
+}
+
+nav a {
+    color: #ddd;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Active Navigation Item */
+nav a.active {
+    background-color: #0073e6;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Section Styling */
+section {
+    padding: 40px 20px;
+    margin: 20px;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #e1e1e1;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    font-size: 1.5rem;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+/* Lists Styling */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li, ol li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+/* Hover Effects for Lists */
+ul li:hover, ol li:hover {
+    background-color: #333;
+    border-left: 5px solid #0073e6;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Image Styling */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.responsive-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #aaa;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Button Styling */
+.next-page-button {
+    background-color: #0073e6;  /* Primary button color */
+    color: #fff;
+    padding: 12px 30px;  /* Increased padding for better spacing */
+    border-radius: 8px;  /* More rounded corners for a smoother look */
+    text-align: center;
+    font-size: 1.1rem;  /* Slightly larger text for better visibility */
+    display: inline-block;
+    margin-top: 25px;  /* Increased margin for better spacing between elements */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;  /* Added box-shadow transition */
+}
+
+/* Hover State */
+.next-page-button:hover {
+    background-color: #005bb5;  /* Darker shade on hover */
+    transform: scale(1.05);  /* Slight scale effect on hover */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);  /* Soft shadow for better hover effect */
+}
+
+/* Focus State */
+.next-page-button:focus {
+    outline: none;
+    box-shadow: 0 0 15px #0073e6;  /* Glow effect on focus */
+}
+
+/* Active State (when clicked) */
+.next-page-button:active {
+    transform: scale(1);  /* Reset scale on click */
+    background-color: #004494;  /* Even darker shade when button is pressed */
+}
+
+/* Page-Specific Color Customization */
+body#transportation header {
+    background-color: #0a1d2e; /* Dark Blue for Transportation */
+}
+
+body#public-services header {
+    background-color: #3b1c1c; /* Dark Red for Public Services */
+}
+
+body#infrastructure header {
+    background-color: #2c3537; /* Dark Slate Green for Infrastructure */
+}
+
+body#education header {
+    background-color: #3a3f57; /* Dark Blue-Gray for Education */
+}
+
+body#healthcare header {
+    background-color: #5a3e2f; /* Dark Brown for Healthcare */
+}
+
+body#transportation nav {
+    background-color: #0e1c29; /* Dark Blue Navigation for Transportation */
+}
+
+body#public-services nav {
+    background-color: #2b1414; /* Dark Red Navigation for Public Services */
+}
+
+body#infrastructure nav {
+    background-color: #252d2d; /* Dark Slate Green Navigation for Infrastructure */
+}
+
+body#education nav {
+    background-color: #2f3749; /* Dark Blue-Gray Navigation for Education */
+}
+
+body#healthcare nav {
+    background-color: #4b2f23; /* Dark Brown Navigation for Healthcare */
+}
+
+body#transportation section {
+    background-color: #1e2a36; /* Dark Blue for Transportation Sections */
+}
+
+body#public-services section {
+    background-color: #2d1515; /* Dark Red for Public Services Sections */
+}
+
+body#infrastructure section {
+    background-color: #263232; /* Dark Slate Green for Infrastructure Sections */
+}
+
+body#education section {
+    background-color: #323d4a; /* Dark Blue-Gray for Education Sections */
+}
+
+body#healthcare section {
+    background-color: #4b3629; /* Dark Brown for Healthcare Sections */
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .responsive-img {
+        max-width: 95%;
+        margin-bottom: 15px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Media Queries for Tablets */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .responsive-img {
+        max-width: 100%;
+    }
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Section Animations */
+section {
+    animation: fadeIn 2s ease-out;
+}
+
+/* Navbar Animations */
+nav a {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+nav a:nth-child(odd) {
+    animation-delay: 0.5s;
+}
+
+nav a:nth-child(even) {
+    animation-delay: 1s;
+}
+
+/* Header Animation */
+header {
+    animation: fadeIn 2s ease-out;
+}
+
+header h1 {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+header p {
+    animation: fadeIn 2s ease-out;
+    animation-delay: 1s;
+}
+
+/* Responsive Utility Classes */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-white {
+    color: #fff;
+}
+
+/* Styling for Forms */
+form {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+form input, form select, form textarea {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+form input[type="submit"], form button {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover, form button:hover {
+    background-color: #005bb5;
+}
+
+/* Card Styling */
+.card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #e1e1e1;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.1rem;
+    color: #bbb;
+}
+
+/* Tooltip Styling */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Additional Page-Specific Styles */
+body#transportation h2, body#transportation h3 {
+    color: #0073e6;
+}
+
+body#public-services h2, body#public-services h3 {
+    color: #ff4c4c;
+}
+
+body#infrastructure h2, body#infrastructure h3 {
+    color: #5bc0be;
+}
+
+body#education h2, body#education h3 {
+    color: #5f6d86;
+}
+
+body#healthcare h2, body#healthcare h3 {
+    color: #bf7f49;
+}
